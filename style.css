@@ -1,0 +1,14 @@
+#container {
+    display: grid;
+    margin: 100px auto;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 575px;
+    width: 575px;
+}
+.square {
+    background-color: rgb(180, 179, 179);
+    border: 1px solid #000000;   
+  }
