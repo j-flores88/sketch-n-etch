@@ -1,14 +1,49 @@
+body {
+    background: #f85032;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e73827, #f85032);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e73827, #f85032); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
 #container {
     display: grid;
-    margin: 100px auto;
+    margin: 50px auto;
     grid-template-columns: repeat(16, 2fr);
     grid-template-rows: repeat(16, 2fr);
-    border: 3px solid black;
-    border-radius: 5px;
-    height: 575px;
-    width: 575px;
+    border: 40px solid rgb(10, 39, 94);
+    border-top-left-radius: 1px;
+    border-radius: 15px;
+    /*
+    border-image-source: linear-gradient(-45deg, rgb(3, 83, 255), rgb(36, 0, 165));
+    border-image-slice: 1;
+   */
+    height: 576px;
+    width: 576px;
+    z-index: 2;
 }
+
 .square {
     background-color: rgb(180, 179, 179);
-    border: 1px solid #000000;   
-  }
+    /*border: 1px solid #000000;*/   
+    z-index: 3;
+}
+.color {
+    background-color: black;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+}
+#reset, #quantity {
+    margin: 10px;
+}
+#title {
+    margin-top: 30px;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Yesteryear', cursive;
+    color: blanchedalmond;
+    -webkit-text-stroke: 2px rgb(10, 39, 94);
+}
